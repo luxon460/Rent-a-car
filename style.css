@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+}
+
+/* HEADER & NAVIGATION */
+header {
+    background: linear-gradient(135deg, #0f1f2e 0%, #1a3451 100%);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+nav {15, 31, 46, 0.98);
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 100%;
+}
+
+nav.active {
+    max-height: 300px;
+    padding: 25 300px;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e8eef5;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffc857;
+    border-bottom: 2px solid #ffc857;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #0f1f2e 0%, #1a3451 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: #e8eef5;
+    font-weight: 300;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffc857;
+    color: #0f1f2e;
+    padding: 14px 42px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 200, 87, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #ffb84d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 200, 87, 0.4);
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {50px 0;
+    padding: 50px 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    font-size: 32px;
+    color: #0f1f2e;
+    margin-bottom: 35px;
+    text-align: center;
+    border-bottom: 3px solid #ffc857;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    color: #0f1f2e;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600
+    margin-bottom: 15px;
+}
+
+/* FILTER BUTTONS */
+.filter-buttons {
+    display: 5px 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 22px;
+    border: 2px solid #d1d8e0;
+    background-color: white;
+    color: #2c3e50;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background-color: #f5f7fa;
+    border-color: #ffc857;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background-color: #ffc857;
+    color: #0f1f2e;
+    border-color: #ffc857;
+    box-shadow: 0 5px 15px rgba(255, 200, 87
+    color: #1a3a52;
+    border-color: #FFD700;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+ FLEET S8px;
+    margin-top: 35px;
+}
+
+.car-card {
+    background-color: #fafbfc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    border: 1px solid #e8ecf1;
+}
+
+.car-card.hidden {
+    display: none;
+}
+
+.car-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12
+
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+8ecf1 0%, #f5f7fa 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #a0a8b8;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 24px;
+}
+
+.car-name {
+    font-size: 19px;
+    font-weight: 700;
+    color: #0f1f2e;
+    margin-bottom: 12px;
+}
+
+.car-details {
+    font-size: 14px;
+    color: #5a6c7d;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.car-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffc857;
+    margin: 18
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+    margin: 15px 0;
+}
+1a3451;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.car-button:hover {
+    background-color: #0f1f2e;
+    box-shadow: 0 4px 12px rgba(15, 31, 46, 0.25)lor 0.3s ease;
+}
+
+.car-button:hover {
+    background-color: #1a3a52;
+}
+
+/* ABOUT SECTION */
+.about-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}40px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: #0f1f2e;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 12px 14px;
+    border: 1px solid #d1d8e0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #fafbfc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ffc857;
+    box-shadow: 0 0 0 3px rgba(255, 200, 87, 0.1);
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #ffc857;
+    color: #0f1f2e;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 200, 87, 0.3);
+}
+
+input[type="submit"]:hover {
+    background-color: #ffb84d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 200, 87, 0.4
+
+input[type="submit"]:hover {
+    background-color: #FFC700;
+    transform: translat0f1f2e;
+    color: #e8eef5;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+footer a {
+    color: #ffc857;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffb84d
+    color: #FFD76px;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 1001;
+}
+
+.menu-toggle:hover {
+    color: #ffc857
+/* MOBILE MENU TOGGLE */
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: transform 0.3s ease;
+    z-index: 1001;
+}
+
+.menu-toggle.active {
+    transform: rotate(90deg);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header {
+        po{
+        padding: 70px 20px;
+    }
+    
+    .hero h2 {
+        font-size: 32px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    section {
+        padding: 30px 20px;
+    }
+    
+    .fleet-container {
+        grid-template-columns: 1fr;
+        gap: 20px
+    nav ul li {
+        margin: 15px 0;
+    }
+    
+    .hero h2 {
+        font-size: 32px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .fleet-container {
+        grid-template-columns: 1fr;
+    }
+}
